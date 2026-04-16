@@ -35,8 +35,7 @@ body::after{content:'';position:fixed;inset:0;pointer-events:none;z-index:9998;o
 
 /* HERO */
 .hero{min-height:100vh;display:flex;align-items:center;justify-content:center;text-align:center;background:#1A1A1A;position:relative;overflow:hidden;padding:120px 40px 140px}
-.hero::before{content:'';position:absolute;inset:0;background:radial-gradient(circle at 50% 35%, #2a1015 0%, #1A1A1A 60%)}
-.hero::after{content:'';position:absolute;bottom:0;left:0;right:0;height:1px;background:var(--cream)}
+.hero::before{content:'';position:absolute;inset:0;background:none}
 .hero-c{position:relative;z-index:1;max-width:720px}
 /* Hero parallax targets */
 .hero-drop{margin-bottom:36px;will-change:transform,opacity}
@@ -88,8 +87,6 @@ body::after{content:'';position:fixed;inset:0;pointer-events:none;z-index:9998;o
 .st::before{content:counter(s);position:absolute;top:0;font-size:80px;font-weight:900;color:var(--wine);opacity:.4;line-height:1}
 .st-t{font-size:13px;font-weight:900;text-transform:uppercase;letter-spacing:.12em;margin-bottom:14px;color:#fff}
 .st-d{font-size:14px;color:rgba(255,255,255,.35);line-height:2}
-/* Connecting lines between steps */
-.st-line{position:absolute;top:40px;left:80px;right:-56px;height:1px;background:linear-gradient(90deg,rgba(122,16,32,.4),transparent 80%)}
 
 /* PRICING */
 .pricing{background:var(--cream)}
@@ -116,7 +113,7 @@ body::after{content:'';position:fixed;inset:0;pointer-events:none;z-index:9998;o
 .cta-note{font-size:12px;color:rgba(255,255,255,.15);margin-top:24px}
 .foot{background:var(--ink);border-top:1px solid rgba(255,255,255,.03);padding:28px;text-align:center;font-size:11px;color:rgba(255,255,255,.1);letter-spacing:.08em}
 
-@media(max-width:900px){.pg,.stps{grid-template-columns:1fr}.about-g{grid-template-columns:1fr;gap:40px}.st-line{display:none}}
+@media(max-width:900px){.pg,.stps{grid-template-columns:1fr}.about-g{grid-template-columns:1fr;gap:40px}}
 @media(max-width:768px){.nav-r a:not(.nav-cta){display:none}.hero{padding:100px 24px 100px;min-height:auto}.sec{padding:80px 24px}.ft{display:block;overflow-x:auto}.prc-h{flex-direction:column;gap:12px;align-items:flex-start}}
 </style>
 </head>
@@ -163,8 +160,8 @@ body::after{content:'';position:fixed;inset:0;pointer-events:none;z-index:9998;o
 <div class="hdl fade-up d1">HOW IT WORKS</div>
 <div class="line-draw fade-up d2" style="background:rgba(255,255,255,.15)"></div>
 <div class="stps">
-<div class="st fade-up d1"><div class="st-line"></div><div class="st-t">CREATE & INVITE</div><div class="st-d">Event hosts create the event, set ticket tiers and pricing, and invite agents by email. Agents accept, pay their listing fee, and upload their portfolio.</div></div>
-<div class="st fade-up d2"><div class="st-line"></div><div class="st-t">TASTE & ORDER</div><div class="st-d">Attendees buy tickets, enter the event with a passcode, browse wines on their phone by supplier table, and place orders during the tasting.</div></div>
+<div class="st fade-up d1"><div class="st-t">CREATE & INVITE</div><div class="st-d">Event hosts create the event, set ticket tiers and pricing, and invite agents by email. Agents accept, pay their listing fee, and upload their portfolio.</div></div>
+<div class="st fade-up d2"><div class="st-t">TASTE & ORDER</div><div class="st-d">Attendees buy tickets, enter the event with a passcode, browse wines on their phone by supplier table, and place orders during the tasting.</div></div>
 <div class="st fade-up d3"><div class="st-t">CONNECT & CLOSE</div><div class="st-d">Agents unlock buyer details, confirm orders, and follow up directly. Orders stay open for 48 hours after the event — no missed opportunities.</div></div>
 </div></div></section>
 
